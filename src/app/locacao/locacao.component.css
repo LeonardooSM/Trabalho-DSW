@@ -1,0 +1,64 @@
+.form-container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    color: #FFFDEF;
+    width: 400px; /* Ajuste a largura conforme necessário */
+    margin: 20px auto; /* Centraliza o formulário */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #FFFDEF; /* Cor do título */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #0e3a3a;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #333;
+    margin-bottom: 20px; /* Espaçamento entre os campos */
+}
+
+.total-valor {
+    text-align: center;
+    font-size: 20px;
+    margin: 15px 0;
+    color: #FFFDEF; /* Cor do valor total */
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 12px 35px;
+    background: #FFFFFF;
+    font-size: 17px;
+    font-weight: 500;
+    color: #000000;
+    border: 3px solid #0e3a3a;
+    border-radius: 8px;
+    box-shadow: 0 0 0 #fec1958c;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0e3a3a;
+    color: #FFFFFF;
+    box-shadow: 0 0 25px #0e3a3a;
+    border: 3px solid #FFF;
+}

@@ -1,0 +1,27 @@
+<div class="locacoes-list">
+    <h2>Lista de Locações</h2>
+    <ul>
+        <li *ngFor="let locacao of locacoes; let i = index">
+            <p *ngIf="!locacao.editando">
+                <strong>{{ locacao.cliente.nome }}</strong> locou <strong>{{ locacao.lancha.modelo }}</strong> por <strong>{{ locacao.quantidadeDias }}</strong> dias. 
+                Total: <strong>R$ {{ locacao.valorTotal }}</strong>
+            </p>
+            
+            <!-- Exibe o formulário de edição se a locação estiver em modo de edição -->
+            <div *ngIf="locacao.editando">
+                <label>Quantidade de Dias:</label>
+                <input type="number" [(ngModel)]="locacao.quantidadeDias" (change)="atualizarValorTotal(locacao)" min="1" />
+
+                <label>Valor Total:</label>
+                <input type="text" [value]="locacao.valorTotal | currency:'BRL'" readonly />
+                
+                <button (click)="salvarEdicao(locacao)">Salvar</button>
+                <button (click)="cancelarEdicao(locacao)">Cancelar</button>
+            </div>
+
+            <!-- Botões de ação -->
+            <button *ngIf="!locacao.editando" (click)="editarLocacao(locacao)">Editar</button>
+            <button *ngIf="!locacao.editando" (click)="excluirLocacao(i)">Excluir</button>
+        </li>
+    </ul>
+</div>

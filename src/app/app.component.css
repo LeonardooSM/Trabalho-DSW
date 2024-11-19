@@ -1,0 +1,38 @@
+.navbar {
+    background-color: #212121; /* Cor de fundo */
+    color: #FFFDEF; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+    display: flex; /* Usando flexbox para layout */
+    justify-content: space-between; /* Espaçamento entre itens */
+    align-items: center; /* Alinhamento vertical */
+}
+
+.navbar h1 {
+    margin: 0; /* Remove margens padrão */
+    font-size: 28px; /* Tamanho da fonte do título */
+}
+
+.navbar ul {
+    list-style: none; /* Remove marcadores da lista */
+    display: flex; /* Alinha os itens da lista horizontalmente */
+}
+
+.navbar ul li {
+    margin-left: 20px; /* Espaçamento entre os itens */
+}
+
+.navbar ul li a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #FFFDEF; /* Cor dos links */
+    font-weight: bold; /* Deixa o texto mais espesso */
+    transition: color 0.3s ease; /* Efeito de transição para hover */
+}
+
+.navbar ul li a:hover {
+    color: #0e3a3a; /* Cor do texto ao passar o mouse */
+}
+
+.router-outlet {
+    margin-top: 20px; /* Espaçamento entre a navegação e o conteúdo */
+}

@@ -1,0 +1,23 @@
+<div class="form-container">
+    <h2>Cadastro de Lanchas</h2>
+    <form (ngSubmit)="cadastrarLancha()">
+        <label for="modelo">Modelo:</label>
+        <input type="text" id="modelo" [(ngModel)]="modelo" name="modelo" required />
+
+        <label for="capacidade">Capacidade:</label>
+        <input type="number" id="capacidade" [(ngModel)]="capacidade" name="capacidade" required />
+
+        <label for="valor">Valor da Locação:</label>
+        <input type="number" id="valor" [(ngModel)]="valor" name="valor" required />
+
+        <button type="submit">
+            Cadastrar Lancha
+            <svg class="star-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><circle cx="10" cy="10" r="5" class="fil0" /></svg>
+            <svg class="star-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3" class="fil0" /></svg>
+            <svg class="star-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><circle cx="10" cy="10" r="1" class="fil0" /></svg>
+            <svg class="star-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><circle cx="10" cy="10" r="2" class="fil0" /></svg>
+            <svg class="star-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3" class="fil0" /></svg>
+            <svg class="star-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><circle cx="10" cy="10" r="1" class="fil0" /></svg>
+        </button>
+    </form>
+</div>

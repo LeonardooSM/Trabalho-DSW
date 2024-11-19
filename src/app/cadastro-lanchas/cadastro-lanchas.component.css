@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212121;
+  }
+  
+  .form-container {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 400px; /* Largura do formulário */
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #FFFDEF; /* Cor do título */
+  }
+  
+  label {
+    margin-bottom: 5px;
+    display: block;
+    font-size: 16px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #0e3a3a;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #444; /* Cor do fundo do input */
+    color: #FFFDEF; /* Cor do texto do input */
+  }
+  
+  input:focus {
+    border-color: #0e3a3a;
+    outline: none;
+  }
+  
+  button {
+    position: relative;
+    padding: 12px 35px;
+    background: #FFFFFF;
+    font-size: 17px;
+    font-weight: 500;
+    color: #000000;
+    border: 3px solid #0e3a3a;
+    border-radius: 8px;
+    box-shadow: 0 0 0 #fec1958c;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #0e3a3a;
+    color: #FFFFFF;
+    box-shadow: 0 0 25px #0e3a3a;
+    border: 3px solid #FFF;
+  }
+  
+  .star-1, .star-2, .star-3, .star-4, .star-5, .star-6 {
+    position: absolute;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+  }
+  
+  .star-1 {
+    top: 20%;
+    left: 20%;
+    width: 25px;
+  }
+  
+  .star-2 {
+    top: 45%;
+    left: 45%;
+    width: 15px;
+  }
+  
+  .star-3 {
+    top: 40%;
+    left: 40%;
+    width: 5px;
+  }
+  
+  .star-4 {
+    top: 20%;
+    left: 40%;
+    width: 8px;
+  }
+  
+  .star-5 {
+    top: 25%;
+    left: 45%;
+    width: 15px;
+  }
+  
+  .star-6 {
+    top: 5%;
+    left: 50%;
+    width: 5px;
+  }
+  
+  button:hover .star-1 { top: -80%; left: -30%; }
+  button:hover .star-2 { top: -25%; left: 10%; }
+  button:hover .star-3 { top: 55%; left: 25%; }
+  button:hover .star-4 { top: 30%; left: 80%; }
+  button:hover .star-5 { top: 25%; left: 115%; }
+  button:hover .star-6 { top: 5%; left: 60%; }
+  
+  .fil0 {
+    fill: #FFFDEF;
+  }
+  
